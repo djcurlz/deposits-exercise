@@ -1,0 +1,2 @@
+class Tradeline < ApplicationRecord
+end
