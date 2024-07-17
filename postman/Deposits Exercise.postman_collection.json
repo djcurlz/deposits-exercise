@@ -62,7 +62,16 @@
 			"name": "Tradelines",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/tradelines",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"tradelines"
+					]
+				}
 			},
 			"response": []
 		},
@@ -179,26 +188,27 @@
 			"response": []
 		},
 		{
-			"name": "Get Chase Deposits",
+			"name": "Chase Deposits",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{localhost}}/tradelines/1/deposits",
+					"raw": "{{localhost}}/tradelines/1/deposits/1",
 					"host": [
 						"{{localhost}}"
 					],
 					"path": [
 						"tradelines",
 						"1",
-						"deposits"
+						"deposits",
+						"1"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "Get Discover Deposits",
+			"name": "Discover Deposits",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -211,6 +221,46 @@
 						"tradelines",
 						"2",
 						"deposits"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Chase Deposit ID 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/tradelines/1/deposits/1",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"tradelines",
+						"1",
+						"deposits",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Discover Deposit ID 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/tradelines/2/deposits/2",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"tradelines",
+						"2",
+						"deposits",
+						"2"
 					]
 				}
 			},
